@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"> 
+        <style>
+          body {
+            background-color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+
+          .no-display {
+            display: none;
+          }
+
+          .center {
+            margin: auto;
+            padding: 10px 50px;
+            text-align: center;
+            font-size: 14px;
+          }
+
+          .title {
+            font-size: 30px;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            color: #262626;
+          }
+
+          .content {
+            margin-top: 10em;
+          }
+          
+          .table {
+            width: 750px;
+            height: 2000px;
+            float:right;
+          }
+          
+          .moisture_level {
+             float: left;
+             font-size: 800 px;
+          }
+          
+          .description {
+            font-size: 20px;
+            text-align:left;
+          }
+          
+          
+          #readings {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+          }
+
+          #readings td, #readings th {
+            border: 1px solid #ddd;
+             padding: 8px;
+          }
+
+          #readings tr:nth-child(even){background-color: #f2f2f2;}
+
+          #readings tr:hover {background-color: #ddd;}
+
+          #readings th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+          }
+
+        </style>
+        <script></script>
+    </head>
+    <body>
+      <div class = 'center'>
+        <div class = 'title'><h1>Moisture Detector Dasboard</h1></div>
+        <div class = 'description'><p>This dashboard automatically depicts data from our Arduino moisture sensor. The sensor detects the moisture level of the plant's soil which is shown below and waters the plant if it is too low. There is a table of the latest five readings of the sensor as well. <br> <br>While this is just a small prototype, this sensor and dashboard would help farmers by decreasing the amount of watering they have to do and preventing overwatering.  </p></div>
+        <br><br><br>
+        <div class = 'moisture_level'><h1> Latest Moisture Level (%): <br>󰀂v.88-latest_moisture_level󰀂</h1></div>
+        <div class = 'table'><h2>Most Recent Data Readings</h2><table id="readings">
+          <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Moisture</th>
+          </tr>
+          <tr>
+            <td>󰀂v.92-last_of_date󰀂</td>
+            <td>󰀂v.97-last_of_time󰀂</td>
+            <td>󰀂v.102-last_of_moisture󰀂</td>
+          </tr>
+          <tr>
+            <td>󰀂v.93-second_of_date󰀂</td>
+            <td>󰀂v.98-second_of_time󰀂</td>
+            <td>󰀂v.103-second_of_moisture󰀂</td>
+          </tr>
+          <tr>
+            <td>󰀂v.94-third_of_date󰀂</td>
+            <td>󰀂v.99-third_of_time󰀂</td>
+            <td>󰀂v.104-third_of_moisture󰀂</td>
+          </tr>
+          <tr>
+            <td>󰀂v.95-fourth_of_date󰀂</td>
+            <td>󰀂v.100-fourth_of_time󰀂</td>
+            <td>󰀂v.105-fourth_of_moisture󰀂</td>
+          </tr>
+          <tr>
+            <td>󰀂v.96-fifth_of_date󰀂</td>
+            <td>󰀂v.101-fifth_of_time󰀂</td>
+            <td>󰀂v.106-fifth_of_moisture󰀂</td>
+          </tr>
+          </table></div>
+      </div>
+    </body>
+</html>
